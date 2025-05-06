@@ -43,7 +43,7 @@ jobs:
             image:
               repository: ${{ secrets.DOCKERHUB_USER }}/hackers-api
               tag: latest
-            hostname: greghacker-api.preview.cb-demos.io
+            hostname: buglehacker-api.preview.cb-demos.io
       - name: Register deployed artifact
         uses: cloudbees-io/register-deployed-artifact@v1
         with:
@@ -56,7 +56,7 @@ jobs:
         with:
           content: |-
             ## Deployed environment
-            [Dev frontend](https://greghacker-api.preview.cb-demos.io/)
+            [Dev frontend](https://buglehacker-api.preview.cb-demos.io/)
 
             Running hackers-api:${{ cloudbees.scm.sha }}
           format: MARKDOWN
