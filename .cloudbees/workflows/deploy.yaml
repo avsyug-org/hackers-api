@@ -20,11 +20,11 @@ on:
         type: string
         required: false
 env:
-  NAMESPACE: buglehacker
+  NAMESPACE: buglehacker-test
   APP_NAME: microhacker-api
 jobs:
   deploy:
-    environment: BugleTest
+    environment: bugletest
     steps:
       - name: Checkout
         uses: cloudbees-io/checkout@v1
