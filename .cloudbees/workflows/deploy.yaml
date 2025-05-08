@@ -50,7 +50,7 @@ jobs:
           name: ${{ secrets.DOCKERHUB_USER }}/hackers-api
           version: latest
           url: "${{ secrets.DOCKERHUB_USER }}/hackers-api:latest"
-          target-environment: BugleTest
+          target-environment: bugletest
       - name: Publish evidence
         uses: cloudbees-io/publish-evidence-item@v1
         with:
